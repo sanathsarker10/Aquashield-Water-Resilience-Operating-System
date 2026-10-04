@@ -2,11 +2,6 @@
 # 💧 AquaShield — Water Resilience Operating System
 
 
-## 🔗 Live Application
-
-🌐 **Try the Live App**: [https://aquashield-india-s-water-resilience-operating-sys.ai.studio/](https://aquashield-india-s-water-resilience-operating-sys.ai.studio/)
-
----
 
 ## 🚨 The Problem
 
@@ -172,6 +167,3 @@ Access the hosted web application and interactive prototype here:
 * **Project**: AquaShield Water Resilience Operating System
 ```
 
-***
-
-🎯 You can directly paste this into your repository's `README.md` file on GitHub! Good luck with your project and pitch presentation! 🚀
