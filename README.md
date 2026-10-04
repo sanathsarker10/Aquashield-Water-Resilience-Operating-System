@@ -158,11 +158,3 @@ AquaShield operates a multi-stream B2B monetization model:
 
 Access the hosted web application and interactive prototype here:  
 👉 **[AquaShield Web App Studio](https://aquashield-india-s-water-resilience-operating-sys.ai.studio/)**
-
----
-
-
-* **Domain**: Green Energy & Sustainability
-* **Project**: AquaShield Water Resilience Operating System
-```
-
