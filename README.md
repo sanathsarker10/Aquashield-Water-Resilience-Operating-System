@@ -1,6 +1,6 @@
 
-# 💧 AquaShield — Water Resilience Operating System
-
+# 💧 **AquaShield OS**
+_Water Resilience Operating System_
 
 
 ## 🚨 The Problem
