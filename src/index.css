@@ -1,0 +1,193 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #002417;
+  --color-on-primary: #ffffff;
+  --color-primary-container: #0a3b2a;
+  --color-on-primary-container: #77a68f;
+  --color-primary-fixed: #bdedd4;
+  --color-primary-fixed-dim: #a1d1b9;
+  --color-on-primary-fixed: #002115;
+  --color-on-primary-fixed-variant: #224f3d;
+
+  --color-secondary: #1d59c1;
+  --color-on-secondary: #ffffff;
+  --color-secondary-container: #6292fd;
+  --color-on-secondary-container: #002b6b;
+  --color-secondary-fixed: #d9e2ff;
+  --color-secondary-fixed-dim: #b0c6ff;
+  --color-on-secondary-fixed: #001945;
+  --color-on-secondary-fixed-variant: #00419c;
+
+  --color-tertiary: #002232;
+  --color-on-tertiary: #ffffff;
+  --color-tertiary-container: #003850;
+  --color-on-tertiary-container: #00a7e6;
+  --color-tertiary-fixed: #c6e7ff;
+  --color-tertiary-fixed-dim: #83cfff;
+  --color-on-tertiary-fixed: #001e2d;
+  --color-on-tertiary-fixed-variant: #004c6b;
+
+  --color-surface: #f7f9fb;
+  --color-surface-dim: #d8dadc;
+  --color-surface-bright: #f7f9fb;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #f2f4f6;
+  --color-surface-container: #eceef0;
+  --color-surface-container-high: #e6e8ea;
+  --color-surface-container-highest: #e0e3e5;
+  --color-surface-variant: #e0e3e5;
+
+  --color-on-surface: #191c1e;
+  --color-on-surface-variant: #414944;
+  --color-inverse-surface: #2d3133;
+  --color-inverse-on-surface: #eff1f3;
+  --color-inverse-primary: #a1d1b9;
+  --color-outline: #717974;
+  --color-outline-variant: #c0c8c2;
+
+  --color-error: #ba1a1a;
+  --color-on-error: #ffffff;
+  --color-error-container: #ffdad6;
+  --color-on-error-container: #93000a;
+
+  --font-display-lg: 'Space Grotesk', sans-serif;
+  --font-headline-xl: 'Space Grotesk', sans-serif;
+  --font-headline-lg: 'Space Grotesk', sans-serif;
+  --font-headline-md: 'Space Grotesk', sans-serif;
+  --font-headline-sm: 'Space Grotesk', sans-serif;
+  --font-body-lg: 'Manrope', sans-serif;
+  --font-body-md: 'Manrope', sans-serif;
+  --font-body-sm: 'Manrope', sans-serif;
+  --font-label-lg: 'JetBrains Mono', monospace;
+  --font-label-md: 'JetBrains Mono', monospace;
+  --font-label-sm: 'JetBrains Mono', monospace;
+
+  --spacing-space-xs: 0.25rem;
+  --spacing-space-sm: 0.5rem;
+  --spacing-space-md: 1rem;
+  --spacing-space-lg: 1.5rem;
+  --spacing-space-xl: 2.5rem;
+  --spacing-gutter: 1.5rem;
+  --spacing-margin: 2rem;
+}
+
+@layer base {
+  body {
+    font-family: 'Manrope', -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+}
+
+/* Typography Utility Classes */
+.font-display-lg, .font-headline-xl, .font-headline-lg, .font-headline-md, .font-headline-sm {
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+.font-body-lg, .font-body-md, .font-body-sm {
+  font-family: 'Manrope', sans-serif;
+}
+
+.font-label-lg, .font-label-md, .font-label-sm {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.text-display-lg {
+  font-size: 48px;
+  line-height: 56px;
+  font-weight: 700;
+}
+
+.text-headline-xl {
+  font-size: 36px;
+  line-height: 44px;
+  font-weight: 600;
+}
+
+.text-headline-lg {
+  font-size: 28px;
+  line-height: 36px;
+  font-weight: 600;
+}
+
+.text-headline-md {
+  font-size: 22px;
+  line-height: 30px;
+  font-weight: 600;
+}
+
+.text-headline-sm {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 600;
+}
+
+.text-body-lg {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.text-body-md {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+.text-body-sm {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+}
+
+.text-label-lg {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+}
+
+.text-label-md {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 500;
+}
+
+.text-label-sm {
+  font-size: 10px;
+  line-height: 14px;
+  font-weight: 500;
+}
+
+/* Water Flow Animations */
+@keyframes flowDash {
+  to {
+    stroke-dashoffset: -32;
+  }
+}
+
+.water-flow-active {
+  stroke-dasharray: 6, 6;
+  animation: flowDash 1.2s linear infinite;
+}
+
+.water-flow-recycled {
+  stroke-dasharray: 4, 4;
+  animation: flowDash 1.8s linear infinite reverse;
+}
+
+.water-flow-leak {
+  stroke-dasharray: 3, 3;
+  animation: flowDash 0.8s linear infinite;
+}
+
+/* Material Symbols sizing helper */
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  vertical-align: middle;
+  line-height: 1;
+}
+
+.material-symbols-filled {
+  font-variation-settings: 'FILL' 1, 'wght' 500, 'GRAD' 0, 'opsz' 24;
+  vertical-align: middle;
+  line-height: 1;
+}

@@ -1,0 +1,6 @@
+{
+  "name": "AquaShield — India's Water Resilience OS",
+  "description": "Autonomous AI Digital Twin and Industrial Water Telemetry platform for commercial tech parks, high-density RWAs, and industrial campuses across India.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
